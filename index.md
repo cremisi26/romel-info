@@ -4,6 +4,7 @@ A connected reference for exploring the history and core questions of philosophy
 
 ## Branches of Philosophy
 
+- [[Himmelmez]] - Saint No.4
 - [[Epistemology]] — the study of knowledge and justified belief
 - [[Metaphysics]] — the study of reality, being, and existence
 - [[Ethics]] — the study of morality and how to live well

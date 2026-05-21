@@ -1,0 +1,12 @@
+{
+  "logo": "🏛️",
+  "nav": {
+    "title": "Philosophy Wiki"
+  },
+  "favicon": "🏛️",
+  "showSidebar": true,
+  "title": "Philosophy Wiki",
+  "theme": {
+    "theme": "letterpress@0.1.6"
+  }
+}

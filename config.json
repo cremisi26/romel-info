@@ -1,11 +1,11 @@
 {
-  "logo": "🏛️",
+  "logo": "🗄️",
   "nav": {
-    "title": "Philosophy Wiki"
+    "title": "[ROMEL] Hero Information"
   },
-  "favicon": "🏛️",
+  "favicon": "🗄️",
   "showSidebar": true,
-  "title": "Philosophy Wiki",
+  "title": "[ROMEL] Hero Information",
   "theme": {
     "theme": "letterpress@0.1.6"
   }

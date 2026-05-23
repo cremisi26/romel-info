@@ -178,7 +178,7 @@
 | **Max Lv** | 5 |
 | **Damage Type** | Physical |
 | **Target** | Enemy SkillSelfRange |
-| **Variable CT** | 1.5 sec |
+| **Fixed CT** | 1.5 sec |
 | **Fixed CD** | 30.0 sec |
 | **Cast Delay** | 1.0 sec |
 | **Skill Cost** | 5000 HP |
@@ -256,8 +256,8 @@
 | **Damage Type** | Physical Undead |
 | **Target** | Enemy SkillSelfRange |
 | **Range** | 4.0 m |
-| **Variable CT** | 0.8 sec |
-| **Fixed CT** | 4.0 sec |
+| **Fixed CT** | 0.8 sec |
+| **Variable CT** | 4.0 sec |
 | **Skill CD** | 12.0 sec |
 | **Cast Delay** | 2.0 sec |
 | **Skill Cost** | <b style="color: blue">1500 HP / 2000 HP / 2500 HP / 3000 HP / 3500 HP / 4000 HP / 4500 HP / 5000 HP / 5500 HP / 6000 HP</b> |
@@ -353,7 +353,7 @@
 | **Damage Type** | Physical Undead |
 | **Target** | Enemy SkillPointRange |
 | **Range** | 9.0 m |
-| **Fixed CT** | 3.0 sec |
+| **Variable CT** | 3.0 sec |
 | **Skill CD** | 15.0 sec |
 | **Cast Delay** | 2.0 sec |
 | **Skill Cost** | 3000 HP |
@@ -446,7 +446,7 @@
 | **Max Lv** | 5 |
 | **Target** | Friend|Enemy SkillSelfRange |
 | **Range** | 7.0 m |
-| **Fixed CT** | 3.0 sec |
+| **Variable CT** | 3.0 sec |
 | **Fixed CD** | 28.0 sec |
 | **Cast Delay** | 2.0 sec |
 | **Skill Cost** | 8000 HP |
@@ -548,7 +548,7 @@
 | **Type** | Buff |
 | **Max Lv** | 10 |
 | **Target** | Friend SkillNone |
-| **Fixed CT** | 3.0 sec |
+| **Variable CT** | 3.0 sec |
 | **Skill CD** | 15.0 sec |
 | **Cast Delay** | 2.0 sec |
 | **Skill Cost** | 10000 HP |
@@ -629,7 +629,7 @@
 | **Type** | HorribleAddBuff |
 | **Max Lv** | 1 |
 | **Target** | Friend SkillNone |
-| **Fixed CT** | 3.0 sec |
+| **Variable CT** | 3.0 sec |
 | **Fixed CD** | 75.0 sec |
 | **Cast Delay** | 2.0 sec |
 | **Skill Cost** | 12000 HP |

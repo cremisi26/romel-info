@@ -444,7 +444,7 @@
 |-|-:|
 | **Type** | Buff |
 | **Max Lv** | 5 |
-| **Target** | Friend|Enemy SkillSelfRange |
+| **Target** | Friend/Enemy SkillSelfRange |
 | **Range** | 7.0 m |
 | **Variable CT** | 3.0 sec |
 | **Fixed CD** | 28.0 sec |

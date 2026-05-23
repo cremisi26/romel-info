@@ -7,6 +7,8 @@
   "showSidebar": true,
   "title": "[ROMEL] Hero Information",
   "theme": {
-    "theme": "letterpress@0.1.6"
+    "theme": "superstack",
+    "defaultMode": "dark",
+    "showModeSwitch": true
   }
 }

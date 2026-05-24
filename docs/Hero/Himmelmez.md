@@ -948,7 +948,61 @@
 
 ---
 
+## **Advanced Runes**
 
+### S-Star Runes
+
+#### 穿刺之印·星符文 #379484
+ ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] 
+- 【穿刺之刑】伤害＋<b style="color:blue">[1.0% ~ 60.0%]</b>
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+#### 终焉之印·星符文 #379485
+ ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] 
+- 可怖之物重复命中敌人时，伤害＋<b style="color:blue">[1% ~ 20%]</b>，至多叠加3次
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+#### 黄泉之印·星符文 #379486
+ ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] 
+- 【噬血裁决】添加的【流血】使敌人受到的治疗效果<b style="color:blue">[1.0% ~ 30.0%]</b>
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+---
+
+### S Runes
+
+#### 神使之印符文 #379487
+ ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] 
+- 【神使之怒】冷却时间<b style="color:blue">[1% ~ 20%]</b>
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+#### 邪神之印符文 #379488
+ ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] 
+- 【邪神乐园】范围内敌方玩家最大生命值<b style="color:blue">[1.0% ~ 20.0%]</b>
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+#### 逆权之印符文 #379489
+ ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] 
+- 【逆权篡令】领域边缘的骨刺伤害＋<b style="color:blue">[1.0% ~ 50.0%]</b>
+- 【傀儡之主】特性等级＋1（生成概率：6%）
+
+---
+
+## **Featured Weapon**
+
+---
+
+## **Equipment**
+
+---
+
+## **Aesir Runes**
+
+
+[rune_0]: ../img/rune_0.png
+[rune_1]: ../img/rune_1.png
+[rune_2]: ../img/rune_2.png
+[rune_3]: ../img/rune_3.png
 [skill_4880001]: ../img/skill_4880001.png
 [skill_4881001]: ../img/skill_4881001.png
 [skill_4882001]: ../img/skill_4882001.png

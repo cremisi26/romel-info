@@ -953,17 +953,17 @@
 ### S-Star Runes
 
 #### 穿刺之印·星符文 #379484
- ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 【穿刺之刑】伤害＋<b style="color:blue">[1.0% ~ 60.0%]</b>
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
 #### 终焉之印·星符文 #379485
- ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 可怖之物重复命中敌人时，伤害＋<b style="color:blue">[1% ~ 20%]</b>，至多叠加3次
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
 #### 黄泉之印·星符文 #379486
- ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 【噬血裁决】添加的【流血】使敌人受到的治疗效果<b style="color:blue">[1.0% ~ 30.0%]</b>
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
@@ -972,17 +972,17 @@
 ### S Runes
 
 #### 神使之印符文 #379487
- ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 【神使之怒】冷却时间<b style="color:blue">[1% ~ 20%]</b>
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
 #### 邪神之印符文 #379488
- ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 【邪神乐园】范围内敌方玩家最大生命值<b style="color:blue">[1.0% ~ 20.0%]</b>
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
 #### 逆权之印符文 #379489
- ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] 
+<span> ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] </span>
 - 【逆权篡令】领域边缘的骨刺伤害＋<b style="color:blue">[1.0% ~ 50.0%]</b>
 - 【傀儡之主】特性等级＋1（生成概率：6%）
 
@@ -997,6 +997,30 @@
 ---
 
 ## **Aesir Runes**
+| Prop Name | Var Name | Value |
+| :- | :- | -: |
+| Str | Str | 25 |
+| Dex | Dex | 10 |
+| VIT | Vit | 30 |
+| Atk | Atk | 1618.8 |
+| Dmg% | AtkPer | 20.0% |
+| Def | Def | 187.5 |
+| Def% | DefPer | 17.0% |
+| M.Def | MDef | 84.6 |
+| M.Def% | MDefPer | 13.0% |
+| MaxHp | MaxHp | 16221 |
+| MaxHp% | MaxHpPer | 12.0% |
+| Hit | Hit | 90 |
+| Crit.Res. | CriRes | 45.3 |
+| Refine Atk | Refine | 225.7 |
+| Move Spd% | MoveSpdPer | 10.0% |
+| Dmg Reduc. | DamReduc | 12.0% |
+| Magic Reduc. | MDamReduc | 8.0% |
+| Ignore Def | IgnoreDef | 16.0% |
+| Phy. Dmg Inc.  | DamIncrease | 15.0% |
+| Pen. | DamSpike | 10.0% |
+| Undead Element Damage | UndeadAtk | 15.0% |
+| Demi-Human Re. | DemiHumanResPer | 10.0% |
 
 
 [rune_0]: ../img/rune_0.png

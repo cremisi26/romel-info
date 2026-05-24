@@ -27,6 +27,7 @@ Himmelmez 可以号令深渊中的 The Terrifying Thing 对敌人进行攻击，
 **Lv4** 【Command, Shadow Follow】的持续时间内，The Terrifying Thing 的碰撞半径增加2米
 
 **Lv7** 仅攻击到一个敌人时，【The Terrifying Thing】的伤害增加50%
+
 获得技能【Soul Revive】：当【The Terrifying Thing】击杀、斩杀或者在10秒内累计攻击一名玩家5次后，可与攫取对方的灵魂，持续30秒；Himmelmez 可以将灵魂转化为一具傀儡，傀儡会复制目标玩家的所有属性，视为 Himmelmez 的召唤物，并且会自行进行战斗，持续25秒
 
 #### **Notes**
@@ -636,9 +637,13 @@ Himmelmez 用死者的鲜血强化她的魔刃，获得<b style="color: blue">[3
 | | |
 #### **Description**
 Himmelmez 唤醒其体内的死亡之力开启其终极形态，【Descent of the End】期间每秒流失自身当前10%的生命，【Immortal Body】的效果翻倍；【Descent of the End】会唤醒【The Terrifying Thing】，使其展现真实形态，并且每隔0.5秒对碰撞到的敌人造成与【Master of Puppetry】相同倍率的伤害，持续30秒，冷却时间固定不可减少；持续时间内【The Terrifying Thing】获得若干强化效果:
+
 【The Terrifying Thing】的碰撞伤害会斩杀血量低于25%的敌人（对魔物无效）
+
 ※【The Terrifying Thing】击杀或者斩杀敌人时，其所有伤害增加20%，持续10秒，可以叠加
+
 ※可以使用Command, Shadow Follow使【The Terrifying Thing】在五秒内停止移动 
+
 Himmelmez 免疫敌方【The Terrifying Thing】的斩杀效果；【Descent of the End】需要在【The Terrifying Thing】在场时使用，
 
 #### **Notes**

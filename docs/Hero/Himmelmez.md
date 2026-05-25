@@ -34,19 +34,65 @@ Obtain skill 【Soul Revive】: When 【The Terrifying Thing】 kills, executes,
 
 #### **Raw Lua**
 <details>
-<summary>Skill</summary>
+<summary>SKILL</summary>
 <pre><code>{
-    id = 4880007,
-    NameZh = "傀儡之主",
-    Level = 7,
-    Icon = "skill_4880001",
-    Cost = 1,
-    Desc = {{id = 4880000, params = {5200, 80}}},
-    DamageType = 1,
-    Logic = "SkillNone",
-    Buff = {self = {142160, 142161, 142162, 142210, 142192}},
-    Pvp_buff = {self = {142160, 142161, 142162, 142210, 142192}}
-}</code></pre>
+	id = 4880007,
+	NameZh = "傀儡之主",
+	Level = 7,
+	Icon = "skill_4880001",
+	Cost = 1,
+	Desc = { { id = 4880000, params = { 5200, 80 } } },
+	DamageType = 1,
+	Logic = "SkillNone",
+	Buff = { self = { 142160, 142161, 142162, 142210, 142192 } },
+	Pvp_buff = { self = { 142160, 142161, 142162, 142210, 142192 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142160</summary>
+<pre><code>{
+	id = 142160,
+	BuffName = "获得【号令·战斗】",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { LevelUp = 1, SkillID = 4893001, retain = 1, type = "GetSkill" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142161</summary>
+<pre><code>{
+	id = 142161,
+	BuffName = "获得【号令·扩张】",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { LevelUp = 1, SkillID = 4894001, retain = 1, type = "GetSkill" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142162</summary>
+<pre><code>{
+	id = 142162,
+	BuffName = "获得【号令·警戒】",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { LevelUp = 1, SkillID = 4895001, retain = 1, type = "GetSkill" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142210</summary>
+<pre><code>{
+	id = 142210,
+	BuffName = "获得【灵魂苏生】",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { LevelUp = 1, SkillID = 4905001, retain = 1, type = "GetSkill" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142192</summary>
+<pre><code>{ id = 142192, BuffName = "7级特性", BuffRate = { Odds = 100 } }
+</code></pre>
 </details>
 
 ---
@@ -70,79 +116,60 @@ Obtain skill 【Soul Revive】: When 【The Terrifying Thing】 kills, executes,
 Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路径上的敌人造成物理攻击*<b style="color: blue">[1540% / 1780% / 2020% / 2260% / 2500% / 2740% / 2980% / 3220% / 3460% / 3700%]</b>的物理伤害，如果目标在【The Terrifying Thing】的巡逻范围内，则向目标再次释放【Piercing Judgment】，造成相同倍率的物理伤害
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill"
-  },
-  "Attack_EP": 2,
-  "Buff": {
-    "enemy": {
-      "0": 142030
-    }
-  },
-  "CD": 3,
-  "Camps": "Enemy",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DamTime": {
-    "type": 1,
-    "value": 1
-  },
-  "Damage": {
-    "0": {
-      "damChangePer": 37,
-      "elementparam": 9,
-      "type": 83501
-    }
-  },
-  "DamageType": 1,
-  "DelayCD": 1.5,
-  "Desc": {
-    "0": {
-      "id": 4881000,
-      "params": {
-        "0": 3700
-      }
-    }
-  },
-  "Fire_EP": 2,
-  "Icon": "skill_4881001",
-  "Launch_Range": 7.5,
-  "Level": 10,
-  "Logic": "SkillTargetRect",
-  "Logic_Param": {
-    "distance": 8,
-    "emit": {
-      "effect_logic": {
-        "effect": "sfx_himemmeth_kszw_floor_prf",
-        "interval": 0.01,
-        "random_axis_y": true,
-        "type": 1
-      },
-      "speed": 30,
-      "type": 1
-    },
-    "no_select": 1,
-    "range_num": 10,
-    "width": 3
-  },
-  "NameZh": "穿刺之刑",
-  "Pvp_buff": {
-    "enemy": {
-      "0": 142030
-    }
-  },
-  "RollType": 1,
-  "SE_attack": "Skill/sfx_skill_Himelmez_impale",
-  "SkillCost": {
-    "hp": 4800
-  },
-  "SkillType": "Attack",
-  "Target_EP": 2,
-  "id": 4881010
-}</code></pre>
+	id = 4881010,
+	NameZh = "穿刺之刑",
+	Level = 10,
+	Icon = "skill_4881001",
+	Cost = 1,
+	Desc = { { id = 4881000, params = { 3700 } } },
+	RollType = 1,
+	DamageType = 1,
+	SkillType = "Attack",
+	Camps = "Enemy",
+	Launch_Range = 7.5,
+	Fire_EP = 2,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 3,
+	SkillCost = { hp = 4800 },
+	DelayCD = 1.5,
+	Logic = "SkillTargetRect",
+	Logic_Param = {
+		distance = 8,
+		emit = {
+			effect_logic = { effect = "sfx_himemmeth_kszw_floor_prf", interval = 0.01, random_axis_y = true, type = 1 },
+			speed = 30,
+			type = 1,
+		},
+		forward_offset = 0,
+		no_select = 1,
+		range_num = 10,
+		width = 3,
+	},
+	Damage = { { damChangePer = 37, elementparam = 9, type = 83501 } },
+	DamTime = { type = 1, value = 1 },
+	Buff = { enemy = { 142030 } },
+	Pvp_buff = { enemy = { 142030 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill" },
+	SE_attack = "Skill/sfx_skill_Himelmez_impale",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142030</summary>
+<pre><code>{
+	id = 142030,
+	BuffName = "穿刺之刑-可怖协同",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { Odds = 100, coord_attack_range = 8, id = 4897001, type = "HorribleThingCoordUseSkill" },
+}
+</code></pre>
 </details>
 
 ---
@@ -164,62 +191,49 @@ Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路�
 固定吟唱1.5秒后，展开篡夺权柄的领域，领域半径为8米，靠近领域边缘的敌人会持续受到骨刺的攻击，造成物理攻击*<b style="color: blue">[540% / 720% / 900% / 1080% / 1260%]</b>的物理伤害；试图从领域中离开的敌人会被强制眩晕2.5秒，眩晕效果每15秒最多生效一次。【Rebel Mandate】会【策反】范围内所有有生命的召唤物，使其攻击其最近的友军，造成 Himmelmez 的物理攻击*1000%的物理伤害。【The Terrifying Thing】无法被【策反】，已经被【策反】的召唤物也无法再被策反；冷却时间固定不可减少
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill3"
-  },
-  "Attack_EP": 2,
-  "CD": 30,
-  "Camps": "Enemy",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DamageType": 1,
-  "DelayCD": 1,
-  "Desc": {
-    "0": {
-      "id": 4882000,
-      "params": {
-        "0": 1260
-      }
-    }
-  },
-  "Fire_EP": 3,
-  "FixCD": 1,
-  "Icon": "skill_4882001",
-  "Lead_Type": {
-    "CCT": 1.5,
-    "type": 2
-  },
-  "Level": 5,
-  "Logic": "SkillSelfRange",
-  "Logic_Param": {
-    "duration": 15,
-    "fieldarea_cannot_immune": 1,
-    "hit": 50,
-    "interval": 0.3,
-    "interval_skills": {
-      "0": 4907005,
-      "1": 4908005
-    },
-    "isNpcTrap": 1,
-    "isTimeTrap": 1,
-    "lastTime": 15,
-    "max_count": 1,
-    "no_select": 1,
-    "npcid": 1729,
-    "range": 8
-  },
-  "NameZh": "逆权篡令",
-  "SE_attack": "Skill/sfx_skill_Himelmez_usurp",
-  "SkillCost": {
-    "hp": 5000
-  },
-  "SkillType": "HellPlant",
-  "Target_EP": 2,
-  "id": 4882005
-}</code></pre>
+	id = 4882005,
+	NameZh = "逆权篡令",
+	Level = 5,
+	Icon = "skill_4882001",
+	Cost = 1,
+	Desc = { { id = 4882000, params = { 1260 } } },
+	DamageType = 1,
+	SkillType = "HellPlant",
+	Camps = "Enemy",
+	Launch_Range = 0,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 30,
+	FixCD = 1,
+	SkillCost = { hp = 5000 },
+	DelayCD = 1,
+	Lead_Type = { CCT = 1.5, FCT = 0, type = 2 },
+	Logic = "SkillSelfRange",
+	Logic_Param = {
+		duration = 15,
+		fieldarea_cannot_immune = 1,
+		hit = 50,
+		interval = 0.3,
+		interval_skills = { 4907005, 4908005 },
+		isNpcTrap = 1,
+		isTimeTrap = 1,
+		lastTime = 15,
+		max_count = 1,
+		no_select = 1,
+		npcid = 1729,
+		range = 8,
+	},
+	CastAct = "reading",
+	AttackAct = { "use_skill3" },
+	SE_attack = "Skill/sfx_skill_Himelmez_usurp",
+}
+</code></pre>
 </details>
 
 ---
@@ -243,80 +257,49 @@ Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路�
 Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的敌人造成物理攻击*<b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b>的物理伤害并将他们击退4米，无视霸体效果，并在击退范围内留下持续5秒的骨刺，每秒造成物理攻击*<b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b>的物理伤害
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill4"
-  },
-  "Attack_EP": 2,
-  "CD": 12,
-  "Camps": "Enemy",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DamTime": {
-    "type": 1,
-    "value": 1
-  },
-  "Damage": {
-    "0": {
-      "damChangePer": 35,
-      "elementparam": 9,
-      "type": 83501
-    }
-  },
-  "DamageType": 1,
-  "DelayCD": 2,
-  "Desc": {
-    "0": {
-      "id": 4883000,
-      "params": {
-        "0": 3500,
-        "1": 3500
-      }
-    }
-  },
-  "Fire_EP": 3,
-  "HitEffects": {
-    "0": {
-      "direction": "back",
-      "distance": 4,
-      "ignore_no_hit_back": 1,
-      "only_first_hitback": 1,
-      "speed": 20,
-      "type": 1
-    }
-  },
-  "Icon": "skill_4883001",
-  "Launch_Range": 4,
-  "Lead_Type": {
-    "CCT": 0.8,
-    "FCT": 4,
-    "type": 2
-  },
-  "Level": 10,
-  "Logic": "SkillSelfRange",
-  "Logic_Param": {
-    "count": 10,
-    "fieldarea_cannot_immune": 1,
-    "interval": 0.5,
-    "isCountTrap": 1,
-    "max_count": 1,
-    "no_select": 1,
-    "range": 4,
-    "trap_effect": "sfx_himemmeth_nszn_prf,LowRange_B",
-    "whitelist": 1
-  },
-  "NameZh": "神使之怒",
-  "RollType": 1,
-  "SE_attack": "Skill/sfx_skill_Himelmez_wrath",
-  "SkillCost": {
-    "hp": 6000
-  },
-  "SkillType": "Attack",
-  "Target_EP": 2,
-  "id": 4883010
-}</code></pre>
+	id = 4883010,
+	NameZh = "神使之怒",
+	Level = 10,
+	Icon = "skill_4883001",
+	Cost = 1,
+	Desc = { { id = 4883000, params = { 3500, 3500 } } },
+	RollType = 1,
+	DamageType = 1,
+	SkillType = "Attack",
+	Camps = "Enemy",
+	Launch_Range = 4,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 12,
+	SkillCost = { hp = 6000 },
+	DelayCD = 2,
+	Lead_Type = { CCT = 0.8, FCT = 4, type = 2 },
+	Logic = "SkillSelfRange",
+	Logic_Param = {
+		count = 10,
+		fieldarea_cannot_immune = 1,
+		interval = 0.5,
+		isCountTrap = 1,
+		max_count = 1,
+		no_select = 1,
+		range = 4,
+		trap_effect = "sfx_himemmeth_nszn_prf,LowRange_B",
+		whitelist = 1,
+	},
+	Damage = { { damChangePer = 35, elementparam = 9, type = 83501 } },
+	DamTime = { type = 1, value = 1 },
+	HitEffects = { { direction = "back", distance = 4, ignore_no_hit_back = 1, only_first_hitback = 1, speed = 20, type = 1 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill4" },
+	SE_attack = "Skill/sfx_skill_Himelmez_wrath",
+}
+</code></pre>
 </details>
 
 ---
@@ -339,78 +322,62 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 在指定区域打开死亡之门，丧尸之手从地下伸出，对范围内敌人造成每秒造成物理攻击*<b style="color: blue">[800% / 900% / 1000% / 1100% / 1200% / 1300% / 1400% / 1500% / 1600% / 1700%]</b>的物理伤害，持续5秒，并使其【定身】1秒，如果目标抵抗【定身】，则强制降低其80%移动速度，
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill5"
-  },
-  "Attack_EP": 2,
-  "Buff": {
-    "enemy": {
-      "0": 142130
-    }
-  },
-  "CD": 15,
-  "Camps": "Enemy",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DamTime": {
-    "type": 1,
-    "value": 1
-  },
-  "Damage": {
-    "0": {
-      "damChangePer": 17,
-      "elementparam": 9,
-      "type": 83501
-    }
-  },
-  "DamageType": 1,
-  "DelayCD": 2,
-  "Desc": {
-    "0": {
-      "id": 4884000,
-      "params": {
-        "0": 1700
-      }
-    }
-  },
-  "Fire_EP": 3,
-  "Icon": "skill_4884001",
-  "Launch_Range": 9,
-  "Lead_Type": {
-    "FCT": 3,
-    "type": 2
-  },
-  "Level": 10,
-  "Logic": "SkillPointRange",
-  "Logic_Param": {
-    "count": 5,
-    "duration": 5,
-    "interval": 1,
-    "isCountTrap": 1,
-    "max_count": 1,
-    "no_select": 1,
-    "range": 3,
-    "range_num": 10,
-    "trap_effect": "sfx_himemmeth_hqzw_prf,LowRange_B"
-  },
-  "NameZh": "黄泉引渡",
-  "Pvp_buff": {
-    "enemy": {
-      "0": 142130
-    }
-  },
-  "RollType": 1,
-  "SE_attack": "Skill/sfx_skill_Himelmez_ferry",
-  "SkillCost": {
-    "hp": 3000
-  },
-  "SkillType": "Attack",
-  "Target_EP": 2,
-  "id": 4884010
-}</code></pre>
+	id = 4884010,
+	NameZh = "黄泉引渡",
+	Level = 10,
+	Icon = "skill_4884001",
+	Cost = 1,
+	Desc = { { id = 4884000, params = { 1700 } } },
+	RollType = 1,
+	DamageType = 1,
+	SkillType = "Attack",
+	Camps = "Enemy",
+	Launch_Range = 9,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 15,
+	SkillCost = { hp = 3000 },
+	DelayCD = 2,
+	Lead_Type = { CCT = 0, FCT = 3, type = 2 },
+	Logic = "SkillPointRange",
+	Logic_Param = {
+		count = 5,
+		duration = 5,
+		interval = 1,
+		isCountTrap = 1,
+		max_count = 1,
+		no_select = 1,
+		range = 3,
+		range_num = 10,
+		trap_effect = "sfx_himemmeth_hqzw_prf,LowRange_B",
+	},
+	Damage = { { damChangePer = 17, elementparam = 9, type = 83501 } },
+	DamTime = { type = 1, value = 1 },
+	Buff = { enemy = { 142130 } },
+	Pvp_buff = { enemy = { 142130 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill5" },
+	SE_attack = "Skill/sfx_skill_Himelmez_ferry",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142130</summary>
+<pre><code>{
+	id = 142130,
+	BuffName = "黄泉之握（定身）",
+	BuffRate = { Odds = { a = 0, b = 100, type = 160 } },
+	BuffType = { isdisperse = 1, isgain = 0 },
+	BuffStateID = 90020,
+	BuffEffect = { NoMove = 1, StateEffect = 9, type = "StatusChange" },
+}
+</code></pre>
 </details>
 
 ---
@@ -432,88 +399,78 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 创造死亡领域，目标范围半径5米内的所有玩家和召唤物不会死亡，持续<b style="color: blue">[6 / 7 / 8 / 9 / 10]</b>秒，范围内所有敌人的护盾效果（护盾数值）会在持续时间内暂时失效，冷却时间固定不可减少
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill3"
-  },
-  "Attack_EP": 2,
-  "Buff": {
-    "enemy": {
-      "0": 142060,
-      "1": 142061,
-      "2": 142062
-    },
-    "friend": {
-      "0": 142061
-    },
-    "self_skill": {
-      "0": 142061
-    },
-    "team": {
-      "0": 142061
-    }
-  },
-  "CD": 28,
-  "Camps": "Friend|Enemy",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DelayCD": 2,
-  "Desc": {
-    "0": {
-      "id": 4885000,
-      "params": {
-        "0": 10
-      }
-    }
-  },
-  "Fire_EP": 3,
-  "FixCD": 1,
-  "Icon": "skill_4885001",
-  "Launch_Range": 7,
-  "Lead_Type": {
-    "FCT": 3,
-    "type": 2
-  },
-  "Level": 5,
-  "Logic": "SkillSelfRange",
-  "Logic_Param": {
-    "count": 10,
-    "fieldarea_cannot_immune": 1,
-    "interval": 1,
-    "isCountTrap": 1,
-    "max_count": 1,
-    "no_select": 1,
-    "range": 5,
-    "trap_effect": "sfx_himemmeth_wsdly_prf,LowRange_B",
-    "whitelist": 1
-  },
-  "NameZh": "邪神乐园",
-  "Pvp_buff": {
-    "enemy": {
-      "0": 142060,
-      "1": 142061,
-      "2": 142062
-    },
-    "friend": {
-      "0": 142061
-    },
-    "self_skill": {
-      "0": 142061
-    },
-    "team": {
-      "0": 142061
-    }
-  },
-  "SE_attack": "Skill/sfx_skill_Himelmez_pandemonium",
-  "SkillCost": {
-    "hp": 8000
-  },
-  "SkillType": "Buff",
-  "Target_EP": 2,
-  "id": 4885005
-}</code></pre>
+	id = 4885005,
+	NameZh = "邪神乐园",
+	Level = 5,
+	Icon = "skill_4885001",
+	Cost = 1,
+	Desc = { { id = 4885000, params = { 10 } } },
+	SkillType = "Buff",
+	Camps = "Friend|Enemy",
+	Launch_Range = 7,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 28,
+	FixCD = 1,
+	SkillCost = { hp = 8000 },
+	DelayCD = 2,
+	Lead_Type = { CCT = 0, FCT = 3, type = 2 },
+	Logic = "SkillSelfRange",
+	Logic_Param = {
+		count = 10,
+		fieldarea_cannot_immune = 1,
+		interval = 1,
+		isCountTrap = 1,
+		max_count = 1,
+		no_select = 1,
+		range = 5,
+		trap_effect = "sfx_himemmeth_wsdly_prf,LowRange_B",
+		whitelist = 1,
+	},
+	Buff = { enemy = { 142060, 142061, 142062 }, friend = { 142061 }, self_skill = { 142061 }, team = { 142061 } },
+	Pvp_buff = { enemy = { 142060, 142061, 142062 }, friend = { 142061 }, self_skill = { 142061 }, team = { 142061 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill3" },
+	SE_attack = "Skill/sfx_skill_Himelmez_pandemonium",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142060</summary>
+<pre><code>{ id = 142060, BuffName = "伪神乐园-护盾禁用UI", BuffRate = { Odds = 100 }, BuffEffect = {
+	type = "DisableShield",
+} }
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142061</summary>
+<pre><code>{
+	id = 142061,
+	BuffName = "伪神乐园-免死",
+	BuffRate = { Odds = { a = 0, b = 100, type = 3070 } },
+	BuffEffect = { sync_nine = 1, type = "Undead" },
+	BuffIcon = "skillbuff_4885001",
+	IconType = 1,
+	BuffDesc = "邪神乐园：免死且护盾值失效",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142062</summary>
+<pre><code>{
+	id = 142062,
+	BuffName = "伪神乐园-生命上限降低",
+	BuffRate = { Odds = { a = 0, b = 100, type = 3070 } },
+	BuffStateID = 141460,
+	BuffEffect = { MaxHpPer = { a = 0, b = 0, c = 223141, type = 5020 }, type = "AttrChange" },
+}
+</code></pre>
 </details>
 
 ---
@@ -534,67 +491,81 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 Himmelmez 用死者的鲜血强化她的魔刃，获得<b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b>的物理穿刺和忽视物理防御，她的攻击有<b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b>使敌人陷入无法免疫的【流血】状态，持续5秒；【Blood Decree】持续600秒，技能持续时间内释放职业技能时额外消耗5%当前生命
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill6"
-  },
-  "Attack_EP": 2,
-  "AutoCondition": {
-    "0": {
-      "no_target": 1,
-      "time": 600,
-      "type": 1
-    }
-  },
-  "Buff": {
-    "self": {
-      "0": 142070,
-      "1": 142071,
-      "2": 142074,
-      "3": 142075
-    }
-  },
-  "CD": 15,
-  "Camps": "Friend",
-  "CastAct": "reading",
-  "Cost": 1,
-  "DelayCD": 2,
-  "Desc": {
-    "0": {
-      "id": 4886000,
-      "params": {
-        "0": 30,
-        "1": 30
-      }
-    }
-  },
-  "Fire_EP": 3,
-  "Icon": "skill_4886001",
-  "Lead_Type": {
-    "FCT": 3,
-    "type": 2
-  },
-  "Level": 10,
-  "Logic": "SkillNone",
-  "NameZh": "噬血裁决",
-  "Pvp_buff": {
-    "self": {
-      "0": 142070,
-      "1": 142071,
-      "2": 142074,
-      "3": 142075
-    }
-  },
-  "SE_attack": "Skill/sfx_skill_Himelmez_condemn",
-  "SkillCost": {
-    "hp": 10000
-  },
-  "SkillType": "Buff",
-  "Target_EP": 2,
-  "id": 4886010
-}</code></pre>
+	id = 4886010,
+	NameZh = "噬血裁决",
+	Level = 10,
+	Icon = "skill_4886001",
+	Cost = 1,
+	Desc = { { id = 4886000, params = { 30, 30 } } },
+	SkillType = "Buff",
+	Camps = "Friend",
+	Launch_Range = 0,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 15,
+	SkillCost = { hp = 10000 },
+	DelayCD = 2,
+	AutoCondition = { { no_target = 1, time = 600, type = 1 } },
+	Lead_Type = { CCT = 0, FCT = 3, type = 2 },
+	Logic = "SkillNone",
+	Buff = { self = { 142070, 142071, 142074, 142075 } },
+	Pvp_buff = { self = { 142070, 142071, 142074, 142075 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill6" },
+	SE_attack = "Skill/sfx_skill_Himelmez_condemn",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142070</summary>
+<pre><code>{
+	id = 142070,
+	BuffName = "鲜血之刃-生命替代消耗",
+	BuffRate = { Odds = 100 },
+	Condition = { need_skill = { 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4893, 4894, 4895, 4905 }, type = "UseSkill" },
+	BuffEffect = { id = { 142076 }, type = "AddBuff" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142071</summary>
+<pre><code>{
+	id = 142071,
+	BuffName = "鲜血之刃(流血）",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, type = "Attack" },
+	BuffEffect = { id = { 142072, 142073 }, type = "AddBuff" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142074</summary>
+<pre><code>{
+	id = 142074,
+	BuffName = "鲜血之刃增伤",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { DamSpike = { a = 0.03, b = 0, type = 1 }, IgnoreDef = { a = 0.03, b = 0, type = 1 }, type = "AttrChange" },
+	BuffIcon = "skillbuff_4889001",
+	IconType = 1,
+	BuffDesc = "噬血裁决：技能额外消耗生命",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142075</summary>
+<pre><code>{
+	id = 142075,
+	BuffName = "鲜血之刃",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { RightHand = 400300, priority = 1, type = "PartTransform" },
+}
+</code></pre>
 </details>
 
 ---
@@ -623,71 +594,71 @@ Himmelmez 唤醒其体内的死亡之力开启其终极形态，【Descent of th
 Himmelmez 免疫敌方【The Terrifying Thing】的斩杀效果；【Descent of the End】需要在【The Terrifying Thing】在场时使用，
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "AttackAct": {
-    "0": "use_skill7"
-  },
-  "Attack_EP": 2,
-  "Buff": {
-    "self": {
-      "0": 142140,
-      "1": 142141,
-      "2": 142153
-    }
-  },
-  "CD": 75,
-  "Camps": "Friend",
-  "CastAct": "reading",
-  "Contidion": {
-    "skillid": 4883003
-  },
-  "Cost": 1,
-  "DelayCD": 2,
-  "Desc": {
-    "0": {
-      "id": 4887000
-    }
-  },
-  "Fire_EP": 3,
-  "FixCD": 1,
-  "Icon": "skill_4887001",
-  "Lead_Type": {
-    "FCT": 3,
-    "type": 2
-  },
-  "Level": 1,
-  "Logic": "SkillNone",
-  "Logic_Param": {
-    "buffIDs": {
-      "0": 142145,
-      "1": 142146,
-      "2": 142252
-    }
-  },
-  "NameZh": "终焉降临",
-  "PreCondition": {
-    "0": {
-      "buffid": 142002,
-      "type": 12
-    }
-  },
-  "Pvp_buff": {
-    "self": {
-      "0": 142140,
-      "1": 142141,
-      "2": 142153
-    }
-  },
-  "SE_attack": "Skill/sfx_skill_Himelmez_advent",
-  "SkillCost": {
-    "hp": 12000
-  },
-  "SkillType": "HorribleAddBuff",
-  "Target_EP": 2,
-  "id": 4887001
-}</code></pre>
+	id = 4887001,
+	NameZh = "终焉降临",
+	Level = 1,
+	Icon = "skill_4887001",
+	Cost = 1,
+	Contidion = { skillid = 4883003 },
+	Desc = { { id = 4887000, params = _EmptyTable } },
+	SkillType = "HorribleAddBuff",
+	Camps = "Friend",
+	Launch_Range = 0,
+	Fire_EP = 3,
+	Target_EP = 2,
+	Attack_EP = 2,
+	CD = 75,
+	FixCD = 1,
+	SkillCost = { hp = 12000 },
+	DelayCD = 2,
+	PreCondition = { { buffid = 142002, type = 12 } },
+	Lead_Type = { CCT = 0, FCT = 3, type = 2 },
+	Logic = "SkillNone",
+	Logic_Param = { buffIDs = { 142145, 142146, 142252 } },
+	Buff = { self = { 142140, 142141, 142153 } },
+	Pvp_buff = { self = { 142140, 142141, 142153 } },
+	CastAct = "reading",
+	AttackAct = { "use_skill7" },
+	SE_attack = "Skill/sfx_skill_Himelmez_advent",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142140</summary>
+<pre><code>{
+	id = 142140,
+	BuffName = "死亡圆舞曲",
+	BuffRate = { Odds = 100 },
+	BuffStateID = 142140,
+	BuffIcon = "skillbuff_4887001",
+	IconType = 1,
+	BuffDesc = "终焉降临",
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142141</summary>
+<pre><code>{ id = 142141, BuffName = "死亡圆舞曲", BuffRate = { Odds = 100 }, BuffEffect = {
+	id = { 142142 },
+	type = "AddBuff",
+} }
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142153</summary>
+<pre><code>{
+	id = 142153,
+	BuffName = "击杀",
+	BuffRate = { Odds = 100 },
+	Condition = { entryKind = 0, type = "IamKiller" },
+	BuffEffect = { id = { 142143 }, type = "AddBuff" },
+}
+</code></pre>
 </details>
 
 ---
@@ -703,40 +674,72 @@ Himmelmez 免疫敌方【The Terrifying Thing】的斩杀效果；【Descent of 
 Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有生命的召唤物造成的伤害提升<b style="color: blue">[10% / 20% / 30% / 40% / 50%]</b>，每当附近12米内有任意有生命的召唤物阵亡时，该效果会对自身提升<b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b>，持续30秒，可以叠加
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142100
-    }
-  },
-  "Cost": 1,
-  "Desc": {
-    "0": {
-      "id": 4888000,
-      "params": {
-        "0": 50,
-        "1": 10
-      }
-    }
-  },
-  "Icon": "skill_4888001",
-  "Level": 5,
-  "NameZh": "邪神加冕",
-  "Pvp_buff": {
-    "self": {
-      "0": 142100
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4888005
-}</code></pre>
+	id = 4888005,
+	NameZh = "邪神加冕",
+	Level = 5,
+	Icon = "skill_4888001",
+	Cost = 1,
+	Desc = { { id = 4888000, params = { 50, 10 } } },
+	Buff = { self = { 142100 } },
+	Pvp_buff = { self = { 142100 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142100</summary>
+<pre><code>{
+	id = 142100,
+	BuffName = "希默-亡灵女王-附近召唤物阵亡",
+	BuffRate = { Odds = 100 },
+	Condition = {
+		npcids = {
+			580050,
+			580070,
+			580071,
+			580072,
+			580073,
+			580074,
+			580101,
+			580102,
+			580103,
+			580104,
+			580105,
+			580203,
+			580204,
+			590010,
+			590020,
+			590030,
+			591010,
+			591020,
+			591030,
+			600010,
+			600011,
+			600020,
+			600021,
+			600030,
+			600031,
+			580310,
+			580400,
+			580700,
+			580701,
+		},
+		range = 12,
+		type = "NearSummonDie",
+	},
+	BuffEffect = { id = { 142101 }, type = "AddBuff" },
+	ShareTeamBuff = 142102,
+}
+</code></pre>
 </details>
 
 ---
 
-### ![skill_4889001][skill_4889001] **Blood Echo | 泣血回响** #4889
+### ![skill_4889001][skill_4889001] **泣血回响 | 泣血回响** #4889
 #### **Details**
 | | |
 |-|-:|
@@ -747,43 +750,68 @@ Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有�
 每当 Himmelmez 击杀敌人时，恢复自身<b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b>的最大生命，击杀玩家时恢复量提升至<b style="color: blue">[2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%]</b>；Himmelmez 受到生命流失或者消耗生命释放技能时，周围6米范围内的敌人会受到50%的等额生命流失，自身损失的生命会100%转化为可叠加的护盾，持续15秒，该护盾无法抵挡生命流失伤害
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142080,
-      "1": 142090,
-      "2": 142110,
-      "3": 142112,
-      "4": 142114
-    }
-  },
-  "Cost": 1,
-  "Desc": {
-    "0": {
-      "id": 4889000,
-      "params": {
-        "0": 5,
-        "1": 20
-      }
-    }
-  },
-  "Icon": "skill_4889001",
-  "Level": 10,
-  "NameZh": "泣血回响",
-  "Pvp_buff": {
-    "self": {
-      "0": 142080,
-      "1": 142090,
-      "2": 142110,
-      "3": 142112,
-      "4": 142114
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4889010
-}</code></pre>
+	id = 4889010,
+	NameZh = "泣血回响",
+	Level = 10,
+	Icon = "skill_4889001",
+	Cost = 1,
+	Desc = { { id = 4889000, params = { 5, 20 } } },
+	Buff = { self = { 142080, 142090, 142110, 142112, 142114 } },
+	Pvp_buff = { self = { 142080, 142090, 142110, 142112, 142114 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142080</summary>
+<pre><code>{
+	id = 142080,
+	BuffName = "希默-泣血-流失转护盾",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { Ratio = 1, shield_buffid = 142081, type = "HpLossToShield" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142090</summary>
+<pre><code>{
+	id = 142090,
+	BuffName = "希默-泣血-近距分摊伤害",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { Ratio = 0.5, range = 6, type = "HpLossToNearbyDamage" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142110</summary>
+<pre><code>{
+	id = 142110,
+	BuffName = "泣血",
+	BuffRate = { Odds = 100 },
+	Condition = { entryKind = 2, type = "IamKiller" },
+	BuffEffect = { id = { 142111 }, type = "AddBuff" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142112</summary>
+<pre><code>{
+	id = 142112,
+	BuffName = "泣血",
+	BuffRate = { Odds = 100 },
+	Condition = { entryKind = 1, type = "IamKiller" },
+	BuffEffect = { id = { 142113 }, type = "AddBuff" },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142114</summary>
+<pre><code>{ id = 142114, BuffName = "攻击回血", BuffRate = { Odds = 100 } }
+</code></pre>
 </details>
 
 ---
@@ -799,37 +827,39 @@ Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有�
 Himmelmez 每损失10%的血量，便会获得<b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b>的最终伤害减免、技能伤害减免以及普攻伤害减免；每损失1000HP，增加自身<b style="color: blue">[1 / 2 / 3 / 4 / 5]</b>点物理攻击力（PVP/GVG内效果为25%）Himmelmez 受到的治疗不会被转移也不会被转换为伤害
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142120,
-      "1": 142122
-    }
-  },
-  "Cost": 1,
-  "Desc": {
-    "0": {
-      "id": 4890000,
-      "params": {
-        "0": 10,
-        "1": 5
-      }
-    }
-  },
-  "Icon": "skill_4890001",
-  "Level": 5,
-  "NameZh": "不灭之躯",
-  "Pvp_buff": {
-    "self": {
-      "0": 142120,
-      "1": 142122
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4890005
-}</code></pre>
+	id = 4890005,
+	NameZh = "不灭之躯",
+	Level = 5,
+	Icon = "skill_4890001",
+	Cost = 1,
+	Desc = { { id = 4890000, params = { 10, 5 } } },
+	Buff = { self = { 142120, 142122 } },
+	Pvp_buff = { self = { 142120, 142122 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142120</summary>
+<pre><code>{ id = 142120, BuffName = "不灭之躯", BuffRate = { Odds = 100 }, BuffEffect = {
+	id = { 142121 },
+	type = "AddBuff",
+} }
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142122</summary>
+<pre><code>{
+	id = 142122,
+	BuffName = "治愈之光不会转移转换",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { skillid = { 0 }, type = "HealNoAffect" },
+}
+</code></pre>
 </details>
 
 ---
@@ -845,34 +875,32 @@ Himmelmez 每损失10%的血量，便会获得<b style="color: blue">[2% / 4% / 
 Himmelmez 和【The Terrifying Thing】造成伤害时，可以使敌人的物理防御下降<b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b>，最多叠加10层。目标受到物理伤害时，溢出的忽视物理防御会转化为额外伤害，最多提升50%（暴击等无视物理防御的情形不适用）
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142190
-    }
-  },
-  "Cost": 1,
-  "Desc": {
-    "0": {
-      "id": 4891000,
-      "params": {
-        "0": 5
-      }
-    }
-  },
-  "Icon": "skill_4891001",
-  "Level": 10,
-  "NameZh": "亵神之殇",
-  "Pvp_buff": {
-    "self": {
-      "0": 142190
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4891010
-}</code></pre>
+	id = 4891010,
+	NameZh = "亵神之殇",
+	Level = 10,
+	Icon = "skill_4891001",
+	Cost = 1,
+	Desc = { { id = 4891000, params = { 5 } } },
+	Buff = { self = { 142190 } },
+	Pvp_buff = { self = { 142190 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142190</summary>
+<pre><code>{
+	id = 142190,
+	BuffName = "深入骨髓",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, buff_skill_can_trigger = 1, type = "Attack" },
+	BuffEffect = { id = { 142191 }, type = "AddBuff" },
+}
+</code></pre>
 </details>
 
 ---
@@ -888,43 +916,28 @@ Himmelmez 和【The Terrifying Thing】造成伤害时，可以使敌人的物�
 Himmelmez 的种族变为天使，攻击属性强制为不死属性；计算元素克制系数时，不死属性对1级元素铠甲的克制系数变为（2-原克制系数），其他增加元素克制属性的效果会在此之后另外计算
 
 #### **Notes**
+
+#### **Raw Lua**
 <details>
-<summary style="font-size: 14px;"><b>Raw Lua</b></summary>
+<summary>SKILL</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142180
-    }
-  },
-  "Contidion": {
-    "skillid": 4886003
-  },
-  "Cost": 1,
-  "Desc": {
-    "0": {
-      "id": 4892000
-    }
-  },
-  "Icon": "skill_4892001",
-  "Level": 1,
-  "NameZh": {
-    "EN": "Fallen Angel",
-    "ID": "Fallen Angel",
-    "JP": "フォーリンエンジェル",
-    "KR": "폴른 엔젤",
-    "TH": "Fallen Angel",
-    "ZH": "堕落天使",
-    "ZHTW": "墮落天使",
-    "src": "堕落天使"
-  },
-  "Pvp_buff": {
-    "self": {
-      "0": 142180
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4892001
-}</code></pre>
+	id = 4892001,
+	NameZh = "堕落天使",
+	Level = 1,
+	Icon = "skill_4892001",
+	Cost = 1,
+	Contidion = { skillid = 4886003 },
+	Desc = { { id = 4892000, params = _EmptyTable } },
+	Buff = { self = { 142180 } },
+	Pvp_buff = { self = { 142180 } },
+}
+</code></pre>
+</details>
+<details>
+<summary>BUFFER #142180</summary>
+<pre><code>local a =
+	{ id = 142180, BuffName = "死亡天使", BuffRate = { Odds = 100 }, BuffEffect = { race = 8, type = "ChangeRace" } }
+</code></pre>
 </details>
 
 ---

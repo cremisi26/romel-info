@@ -2,6 +2,8 @@
 
 **[ Saint No. 4 | 神使之肆 ]**
 
+The life and death of mortals are nothing more than chess pieces granted to me by the goddess.
+
 凡人之生死,不过是女神赐予我的棋子。
 
 ---

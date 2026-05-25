@@ -22,7 +22,7 @@
 | **Damage Type** | Physical |
 | | |
 #### **Description**
-Himmelmez can command The Terrifying Thing from the abyss to attack enemies. After using 【Command Ready】, 【The Terrifying Thing】lurks around Himmelmez to perform an ambush, every second dealing physical damage equal to P.Atk * <b style="color: blue">[2800% / 3200% / 3600% / 4000% / 4400% / 4800% / 5200%]</b> to all enemies within the ring area, and forcefully reducing their movement speed by <b style="color: blue">[50% / 55% / 60% / 65% / 70% / 75% / 80%]</b>. 【The Terrifying Thing】 is 8 meters, the width of the ring is 4 meters, and the patrol radius of The Terrifying Thing can be changed through 【Abyssal Emerge】.
+Himmelmez can command The Terrifying Thing from the abyss to attack enemies. After using 【Command Ready】, 【The Terrifying Thing】lurks around Himmelmez to perform an ambush, every second dealing physical damage equal to P.ATK * <b style="color: blue">[2800% / 3200% / 3600% / 4000% / 4400% / 4800% / 5200%]</b> to all enemies within the ring area, and forcefully reducing their movement speed by <b style="color: blue">[50% / 55% / 60% / 65% / 70% / 75% / 80%]</b>. 【The Terrifying Thing】 is 8 meters, the width of the ring is 4 meters, and the patrol radius of The Terrifying Thing can be changed through 【Abyssal Emerge】.
 
 **Lv4** During 【Command, Shadow Follow】, the collision radius of The Terrifying Thing increases by 2 meters.
 
@@ -113,7 +113,7 @@ Obtain skill 【Soul Revive】: When 【The Terrifying Thing】 kills, executes,
 | **Skill Cost** | <b style="color: blue">1200 HP / 1600 HP / 2000 HP / 2400 HP / 2800 HP / 3200 HP / 3600 HP / 4000 HP / 4400 HP / 4800 HP</b> |
 | | |
 #### **Description**
-Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路径上的敌人造成物理攻击*<b style="color: blue">[1540% / 1780% / 2020% / 2260% / 2500% / 2740% / 2980% / 3220% / 3460% / 3700%]</b>的物理伤害，如果目标在【The Terrifying Thing】的巡逻范围内，则向目标再次释放【Piercing Judgment】，造成相同倍率的物理伤害
+Himmelmez brandishes the demonic sword, summoning hellish bone spikes to pierce through the ground, dealing physical damage equal to P.ATK * <b style="color: blue">[1540% / 1780% / 2020% / 2260% / 2500% / 2740% / 2980% / 3220% / 3460% / 3700%]</b> to the target and enemnies along the path; if the is within the patrol range of 【The Terrifying Thing】, releases 【Piercing Judgment】 toward the target once again, dealing physical damage of the same multiplier.
 
 #### **Notes**
 
@@ -188,7 +188,7 @@ Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路�
 | **Skill Cost** | 5000 HP |
 | | |
 #### **Description**
-固定吟唱1.5秒后，展开篡夺权柄的领域，领域半径为8米，靠近领域边缘的敌人会持续受到骨刺的攻击，造成物理攻击*<b style="color: blue">[540% / 720% / 900% / 1080% / 1260%]</b>的物理伤害；试图从领域中离开的敌人会被强制眩晕2.5秒，眩晕效果每15秒最多生效一次。【Rebel Mandate】会【策反】范围内所有有生命的召唤物，使其攻击其最近的友军，造成 Himmelmez 的物理攻击*1000%的物理伤害。【The Terrifying Thing】无法被【策反】，已经被【策反】的召唤物也无法再被策反；冷却时间固定不可减少
+After a fixed casting time of 1.5 sec, unfold a domain of usurped authority, the domain radius is 8m, enemies close to the edge of the domain will continuously receive attacks from bone spikes, dealing physical damage equal to P.ATK * <b style="color: blue">[540% / 720% / 900% / 1080% / 1260%]</b>; enemies attempting to leave the domain will be forcefully stunned for 2.5 sec, the stun effect can take effect at most once every 15 sec. 【Rebel Mandate】 will apply 【Revel】 to all living summons within the range, causing them to attack their nearest ally, dealing physical damage equal to Himmelmez's P.ATK * 1000%. 【The Terrifying Thing】 is immune to 【Rebel】, and summons that are already under 【Rebel】 cannot be affected again; the cooldown time is fixed and cannot be reduced.
 
 #### **Notes**
 
@@ -254,7 +254,7 @@ Himmelmez 挥舞魔剑，召唤地狱的骨刺刺穿地表，对目标以及路�
 | **Skill Cost** | <b style="color: blue">1500 HP / 2000 HP / 2500 HP / 3000 HP / 3500 HP / 4000 HP / 4500 HP / 5000 HP / 5500 HP / 6000 HP</b> |
 | | |
 #### **Description**
-Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的敌人造成物理攻击*<b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b>的物理伤害并将他们击退4米，无视霸体效果，并在击退范围内留下持续5秒的骨刺，每秒造成物理攻击*<b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b>的物理伤害
+Himmelmez unleahes fury toward enemies attempting to approach her, dealing physical damage equal to P.ATK * <b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b> to enemies within a 5-meter radius around her and knocking them back 4 meters, ignoring Endure effects, and leaving behind bone spikes in the knockback area that last for 5 sec, dealing physical damage equal to P.ATK * <b style="color: blue">[1700% / 1900% / 2100% / 2300% / 2500% / 2700% / 2900% / 3100% / 3300% / 3500%]</b> every second.
 
 #### **Notes**
 
@@ -319,7 +319,7 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 | **Skill Cost** | 3000 HP |
 | | |
 #### **Description**
-在指定区域打开死亡之门，丧尸之手从地下伸出，对范围内敌人造成每秒造成物理攻击*<b style="color: blue">[800% / 900% / 1000% / 1100% / 1200% / 1300% / 1400% / 1500% / 1600% / 1700%]</b>的物理伤害，持续5秒，并使其【定身】1秒，如果目标抵抗【定身】，则强制降低其80%移动速度，
+Opens a gate of death in a designated area, zombie hands reach out from underground, dealing physical damage equal to P.ATK * <b style="color: blue">[800% / 900% / 1000% / 1100% / 1200% / 1300% / 1400% / 1500% / 1600% / 1700%]</b> every second to enemies within the range, lasting for 5 sec, and applies 【Immobilize】 for 1; if the target resists 【Immobilize】, forcefully reduces their movement speed by 80%.
 
 #### **Notes**
 
@@ -396,7 +396,7 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 | **Skill Cost** | 8000 HP |
 | | |
 #### **Description**
-创造死亡领域，目标范围半径5米内的所有玩家和召唤物不会死亡，持续<b style="color: blue">[6 / 7 / 8 / 9 / 10]</b>秒，范围内所有敌人的护盾效果（护盾数值）会在持续时间内暂时失效，冷却时间固定不可减少
+Creates a domain of death, all players and summons within a 5-meter radius of the target area will not die, lasting for <b style="color: blue">[6 / 7 / 8 / 9 / 10]</b> sec; the shield effects (shield values) of all enemies within the range will temporarily become ineffective during the duration, the cooldown time is fixed and cnnot be reduced.
 
 #### **Notes**
 
@@ -488,7 +488,7 @@ Himmelmez 向企图靠近她的敌人发动怒火，对其周围5米范围内的
 | **Skill Cost** | 10000 HP |
 | | |
 #### **Description**
-Himmelmez 用死者的鲜血强化她的魔刃，获得<b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b>的物理穿刺和忽视物理防御，她的攻击有<b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b>使敌人陷入无法免疫的【流血】状态，持续5秒；【Blood Decree】持续600秒，技能持续时间内释放职业技能时额外消耗5%当前生命
+Himmelmez enhances her demonic blade with the blood of the dead, increasing her Phy Pen and Ign Def by <b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b>, her attacks have a <b style="color: blue">[3% / 6% / 9% / 12% / 15% / 18% / 21% / 24% / 27% / 30%]</b> chance to apply a forced 【Bleeding】 state, lasts for 5 sec; 【Blood Decree】 lasts for 600 sec, and when using job skills during the duration, additionally consumes 5% of current HP.
 
 #### **Notes**
 
@@ -583,15 +583,15 @@ Himmelmez 用死者的鲜血强化她的魔刃，获得<b style="color: blue">[3
 | **Skill Cost** | 12000 HP |
 | | |
 #### **Description**
-Himmelmez 唤醒其体内的死亡之力开启其终极形态，【Descent of the End】期间每秒流失自身当前10%的生命，【Immortal Body】的效果翻倍；【Descent of the End】会唤醒【The Terrifying Thing】，使其展现真实形态，并且每隔0.5秒对碰撞到的敌人造成与【Master of Puppetry】相同倍率的伤害，持续30秒，冷却时间固定不可减少；持续时间内【The Terrifying Thing】获得若干强化效果:
+Himmelmez awakens the power of death within her body to enter her ultimate form, during 【Descent of the End】 she loses 10% of her current HP every second, and the effect of 【Immortal Body】 doubles; 【Descent of the End】 will awaken 【The Terrifying Thing】, causing it to display its true form, and every 0.5 sec dealing damage of the same multiplier as 【Master of Puppetry】 to enemies it collides with, lasts 30 sec, the cooldown time is fixed and cannot be reduced; during the duration 【The Terrifying Thing】 obtains several enhanced effects:
 
-【The Terrifying Thing】的碰撞伤害会斩杀血量低于25%的敌人（对魔物无效）
+【The Terrifying Thing】's collision damage will execute enemies with HP below 25% (does not work against monsters)
 
-※【The Terrifying Thing】击杀或者斩杀敌人时，其所有伤害增加20%，持续10秒，可以叠加
+※ When 【The Terrifying Thing】 kills an enemy, all of its damage increases by 20% for 10 sec, this effect stacks
 
-※可以使用Command, Shadow Follow使【The Terrifying Thing】在五秒内停止移动 
+※ Can use Command, Shadow Follow to make 【The Terrifying Thing】 to stop moving for 5 sec.
 
-Himmelmez 免疫敌方【The Terrifying Thing】的斩杀效果；【Descent of the End】需要在【The Terrifying Thing】在场时使用，
+Himmelmez is immune to the execution effect of enemy's 【The Terrifying Thing】; 【Descent of the End】 can only be used when 【The Terrifying Thing】 is summoned.
 
 #### **Notes**
 
@@ -671,7 +671,7 @@ Himmelmez 免疫敌方【The Terrifying Thing】的斩杀效果；【Descent of 
 | **Max Lv** | 5 |
 | | |
 #### **Description**
-Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有生命的召唤物造成的伤害提升<b style="color: blue">[10% / 20% / 30% / 40% / 50%]</b>，每当附近12米内有任意有生命的召唤物阵亡时，该效果会对自身提升<b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b>，持续30秒，可以叠加
+Himmelmez's skills and 【The Terrifying Thing】, including all living summons in the party, damage is increased by <b style="color: blue">[10% / 20% / 30% / 40% / 50%]</b>; whenever any living summon dies within a 12-meter radius, this effect will increase for herself by <b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b>, lasts 30 sec and can stack.
 
 #### **Notes**
 
@@ -739,7 +739,7 @@ Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有�
 
 ---
 
-### ![skill_4889001][skill_4889001] **泣血回响 | 泣血回响** #4889
+### ![skill_4889001][skill_4889001] **Weeping Blood Echo | 泣血回响** #4889
 #### **Details**
 | | |
 |-|-:|
@@ -747,7 +747,7 @@ Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有�
 | **Max Lv** | 10 |
 | | |
 #### **Description**
-每当 Himmelmez 击杀敌人时，恢复自身<b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b>的最大生命，击杀玩家时恢复量提升至<b style="color: blue">[2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%]</b>；Himmelmez 受到生命流失或者消耗生命释放技能时，周围6米范围内的敌人会受到50%的等额生命流失，自身损失的生命会100%转化为可叠加的护盾，持续15秒，该护盾无法抵挡生命流失伤害
+Whenever Himmelmez kills an enemy, restores <b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b> of her Max HP, and when killing a player, the restored amount increases to <b style="color: blue">[2% / 4% / 6% / 8% / 10% / 12% / 14% / 16% / 18% / 20%]</b>; When Himmelmez suffers HP Loss or consumes HP to use skills, enemies within a 6-meter radius will suffer 50% of the equivalent HP Loss and the HP lost by herself will be converted into a stackable shield at 100% value, lasts 15 sec, this shield cannot block HP Loss damage.
 
 #### **Notes**
 
@@ -824,7 +824,7 @@ Himmelmez 的技能和她的【The Terrifying Thing】以及队伍内所有有�
 | **Max Lv** | 5 |
 | | |
 #### **Description**
-Himmelmez 每损失10%的血量，便会获得<b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b>的最终伤害减免、技能伤害减免以及普攻伤害减免；每损失1000HP，增加自身<b style="color: blue">[1 / 2 / 3 / 4 / 5]</b>点物理攻击力（PVP/GVG内效果为25%）Himmelmez 受到的治疗不会被转移也不会被转换为伤害
+Himmelmez for every 10% HP lost will obtain <b style="color: blue">[2% / 4% / 6% / 8% / 10%]</b> Final DMG Reduc, Skill DMG Reduc and Auto Attack DMG Reduc; for every 1000 HP lost, increases her own P.ATK by <b style="color: blue">[1 / 2 / 3 / 4 / 5]</b> points (this effect is only 25% in PVP/GVG). The healing received by Himmelmez cannot be transferred or converted into damage.
 
 #### **Notes**
 
@@ -872,7 +872,7 @@ Himmelmez 每损失10%的血量，便会获得<b style="color: blue">[2% / 4% / 
 | **Max Lv** | 10 |
 | | |
 #### **Description**
-Himmelmez 和【The Terrifying Thing】造成伤害时，可以使敌人的物理防御下降<b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b>，最多叠加10层。目标受到物理伤害时，溢出的忽视物理防御会转化为额外伤害，最多提升50%（暴击等无视物理防御的情形不适用）
+When Himmelmez and 【The Terrifying Thing】 deals damage, they reduce the the enemy's P.Def by <b style="color: blue">[0.5% / 1.0% / 1.5% / 2.0% / 2.5% / 3.0% / 3.5% / 4.0% / 4.5% / 5.0%]</b>, stakcs up to 10 times. When the target takes physical damage, overflowing Ignore P.Def will be converted to additional damage, increasing up to 50% (attacks that already ignore P.Def such as critical hits are not applicable).
 
 #### **Notes**
 
@@ -913,7 +913,7 @@ Himmelmez 和【The Terrifying Thing】造成伤害时，可以使敌人的物�
 | **Max Lv** | 1 |
 | | |
 #### **Description**
-Himmelmez 的种族变为天使，攻击属性强制为不死属性；计算元素克制系数时，不死属性对1级元素铠甲的克制系数变为（2-原克制系数），其他增加元素克制属性的效果会在此之后另外计算
+Himmelmez's race changes to Angel, and her attack element is forcefully set to Undead element; when calculating elemental coefficients, the coefficient of Undead attribute against Lv1 Element armor changes to (2 - original coeffecient), and other effects that increase element coefficient attributes will be calculated additionally after this.
 
 #### **Notes**
 
@@ -948,18 +948,18 @@ Himmelmez 的种族变为天使，攻击属性强制为不死属性；计算元�
 
 #### Piercing Mark - Star Rune | 穿刺之印·星符文 #379484
 <span> ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- 【Piercing Judgment】伤害＋<b style="color:blue">[1.0% ~ 60.0%]</b>
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- 【Piercing Judgment】 Damage +<b style="color:blue">[1.0% ~ 60.0%]</b>
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 #### Mark of the End - Star Rune | 终焉之印·星符文 #379485
 <span> ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- The Terrifying Thing 重复命中敌人时，伤害＋<b style="color:blue">[1% ~ 20%]</b>，至多叠加3次
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- When The Terrifying Thing hits enemies repeatedly, Damage +<b style="color:blue">[1% ~ 20%]</b>, stacks up to 3 times
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 #### Nether Mark - Star Rune | 黄泉之印·星符文 #379486
 <span> ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- 【Blood Decree】添加的【流血】使敌人受到的治疗效果<b style="color:blue">[1.0% ~ 30.0%]</b>
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- Enemies applied with 【Blood Decree】's  【Bleeding】 causes healing effects received by enemies <b style="color:blue">[-1.0% ~ -30.0%]</b>
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 ---
 
@@ -967,18 +967,18 @@ Himmelmez 的种族变为天使，攻击属性强制为不死属性；计算元�
 
 #### Divine Envoy Mark Rune | 神使之印符文 #379487
 <span> ![Def][rune_2]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- 【Divine Retribution】冷却时间<b style="color:blue">[1% ~ 20%]</b>
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- 【Divine Retribution】 Cooldown <b style="color:blue">[-1% ~ -20%]</b>
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 #### Mark of the Evil God Rune | 邪神之印符文 #379488
 <span> ![Buff][rune_3]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- 【Evil God's Domain】范围内敌方玩家最大生命值<b style="color:blue">[1.0% ~ 20.0%]</b>
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- 【Evil God's Domain】, Max HP of enemies within the range <b style="color:blue">[-1.0% ~ -20.0%]</b>
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 #### Rebel Mandate's Mark Rune 逆权之印符文 #379489
 <span> ![Atk][rune_1]  ![Buff][rune_3]  ![Any][rune_0] </span>
-- 【Rebel Mandate】领域边缘的骨刺伤害＋<b style="color:blue">[1.0% ~ 50.0%]</b>
-- 【Master of Puppetry】特性等级＋1（生成概率：6%）
+- 【Rebel Mandate】 bone spike Damage +<b style="color:blue">[1.0% ~ 50.0%]</b>
+- 【Master of Puppetry】 Feature Lv +1 (Generation Probability: 6%)
 
 ---
 

@@ -22,54 +22,30 @@
 | **Damage Type** | Physical |
 | | |
 #### **Description**
-Himmelmez 可以号令深渊中的 The Terrifying Thing 对敌人进行攻击，使用【Command Ready】后，【The Terrifying Thing】潜伏在 Himmelmez 周围进行伏击，每隔1秒对圆环范围内所有敌人造成物理攻击*<b style="color: blue">[2800% / 3200% / 3600% / 4000% / 4400% / 4800% / 5200%]</b>的物理伤害伤害,并强制使其减速<b style="color: blue">[50% / 55% / 60% / 65% / 70% / 75% / 80%]</b>，【The Terrifying Thing】的初始伏击半径为8米，圆环的宽度为4米，可以通过【Abyssal Emerge】更改 The Terrifying Thing 的巡逻半径
+Himmelmez can command The Terrifying Thing from the abyss to attack enemies. After using 【Command Ready】, 【The Terrifying Thing】lurks around Himmelmez to perform an ambush, every second dealing physical damage equal to P.Atk * <b style="color: blue">[2800% / 3200% / 3600% / 4000% / 4400% / 4800% / 5200%]</b> to all enemies within the ring area, and forcefully reducing their movement speed by <b style="color: blue">[50% / 55% / 60% / 65% / 70% / 75% / 80%]</b>. 【The Terrifying Thing】 is 8 meters, the width of the ring is 4 meters, and the patrol radius of The Terrifying Thing can be changed through 【Abyssal Emerge】.
 
-**Lv4** 【Command, Shadow Follow】的持续时间内，The Terrifying Thing 的碰撞半径增加2米
+**Lv4** During 【Command, Shadow Follow】, the collision radius of The Terrifying Thing increases by 2 meters.
 
-**Lv7** 仅攻击到一个敌人时，【The Terrifying Thing】的伤害增加50%
+**Lv7** When attacking only one enemy, the damage of 【The Terrifying Thing】 increases by 50%.
 
-获得技能【Soul Revive】：当【The Terrifying Thing】击杀、斩杀或者在10秒内累计攻击一名玩家5次后，可与攫取对方的灵魂，持续30秒；Himmelmez 可以将灵魂转化为一具傀儡，傀儡会复制目标玩家的所有属性，视为 Himmelmez 的召唤物，并且会自行进行战斗，持续25秒
+Obtain skill 【Soul Revive】: When 【The Terrifying Thing】 kills, executes, or continuously attacks a player 5 times within 10 sec, it can seize the opponent's soul, lasting for 30 sec; Himmelmez can convert the soul into a puppet, the puppet will copy all attributes of the target player, is treated as Himmelmez's summon, and will fight on its own, lasting for 25 sec.
 
 #### **Notes**
+
 #### **Raw Lua**
 <details>
-<summary>&lt;expand&gt;</summary>
+<summary>Skill</summary>
 <pre><code>{
-  "Buff": {
-    "self": {
-      "0": 142160,
-      "1": 142161,
-      "2": 142162,
-      "3": 142210,
-      "4": 142192
-    }
-  },
-  "Cost": 1,
-  "DamageType": 1,
-  "Desc": {
-    "0": {
-      "id": 4880000,
-      "params": {
-        "0": 5200,
-        "1": 80
-      }
-    }
-  },
-  "Icon": "skill_4880001",
-  "Level": 7,
-  "Logic": "SkillNone",
-  "NameZh": "傀儡之主",
-  "Pvp_buff": {
-    "self": {
-      "0": 142160,
-      "1": 142161,
-      "2": 142162,
-      "3": 142210,
-      "4": 142192
-    }
-  },
-  "SkillType": "Passive",
-  "id": 4880007
+    id = 4880007,
+    NameZh = "傀儡之主",
+    Level = 7,
+    Icon = "skill_4880001",
+    Cost = 1,
+    Desc = {{id = 4880000, params = {5200, 80}}},
+    DamageType = 1,
+    Logic = "SkillNone",
+    Buff = {self = {142160, 142161, 142162, 142210, 142192}},
+    Pvp_buff = {self = {142160, 142161, 142162, 142210, 142192}}
 }</code></pre>
 </details>
 

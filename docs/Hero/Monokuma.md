@@ -46,17 +46,34 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142450</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142450,
+	BuffName = "绝望的执行者（击杀玩家）",
+	BuffRate = { Odds = 100 },
+	Condition = { entryKind = 1, type = "IamKiller" },
+	BuffEffect = { Odds = 100, id = { 142455 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142454</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142454,
+	BuffName = "特性（空buff)",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { sync_nine = 1, type = "AttrChange" },
+	ShareTeamBuff = 142462,
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142550</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142550,
+	BuffName = "特性提升处刑",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { duration = { a = 0.5, b = 0, type = 1 }, skillID = { 4936 }, type = "AffactSkill" },
+}
 </code></pre>
 </details>
 
@@ -126,7 +143,17 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142400</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142400,
+	BuffName = "黑白熊炸弹-火属性易伤",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 1, isgain = 0 },
+	BuffEffect = { BeFireDamPer = -0.3, type = "AttrChange" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "受到火属性伤害提高",
+	Dsc = "受到火属性伤害提高",
+}
 </code></pre>
 </details>
 
@@ -238,32 +265,84 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142420</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142420,
+	BuffName = "神出鬼没-幕后状态",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffStateID = 142420,
+	BuffEffect = {
+		AtkDistancePer = { a = 0.05, b = 0, type = 1 },
+		CDChangePerWithBound = { a = -0.05, b = 0, type = 1 },
+		MoveSpdPer = { a = 0, b = 0, c = 223201, type = 5020 },
+		type = "AttrChange",
+	},
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "幕后状态：射程提高，冷却降低，隐藏身形",
+	Dsc = "幕后状态：射程提高，冷却降低，隐藏身形",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142421</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142421,
+	BuffName = "神出鬼没-不可锁定",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { sync_nine = 1, type = "NoEnemyLocked" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "幕后状态：无法被敌方锁定",
+	Dsc = "幕后状态：无法被敌方锁定",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142422</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142422,
+	BuffName = "神出鬼没-删除校长权威",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { id = { 142430, 142431, 142432, 142433, 142434, 142435, 142436 }, type = "DelBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142423</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142423,
+	BuffName = "神出鬼没-喊话",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, no_normal_skill = 1, type = "UseSkillEnd" },
+	BuffEffect = {
+		live_time = 3,
+		monokuma_effect = "Skill/sfx_danganmonokuma_jwdzxz_floor_prf",
+		special_skill_ids = { 4921, 4922, 4923, 4925, 4926, 4927, 4928 },
+		type = "MonokumaSkillAnnounce",
+	},
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142424</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142424,
+	BuffName = "神出鬼没-移动施法",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { skillids = { 4921, 4922, 4923, 4925, 4926, 4927, 4928 }, type = "CanMoveUseSkill" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142425</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142425,
+	BuffName = "神出鬼没-移动施法",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { all_skill = 1, type = "NoActionUseSkill" },
+}
 </code></pre>
 </details>
 
@@ -317,32 +396,69 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142431</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142431,
+	BuffName = "校长的权威-保底效果",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffStateID = 142431,
+	BuffEffect = { SkillDam = { a = 0, b = 0, c = 223211, type = 5020 }, end_del_buff = { 142430 }, sync_nine = 1, type = "AttrChange" },
+	Dsc = "校长权威：保底伤害和减免",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142432</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142432,
+	BuffName = "校长的权威-体型增大",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { addper = 1, type = "ChangeScale" },
+	Dsc = "校长权威：体型增大",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142433</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142433,
+	BuffName = "校长的权威-初始加层",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { layer = { { id = 142430, layer = { a = 5, b = 50, type = 1 } } }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142434</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142434,
+	BuffName = "校长的权威-造成伤害加层",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, buff_skill_can_trigger = 1, need_damage = 1, type = "Attack" },
+	BuffEffect = { layer = { { id = 142430, layer = 1 } }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142435</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142435,
+	BuffName = "校长的权威-受击减层",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, buff_skill_can_trigger = 1, type = "BeAttack" },
+	BuffEffect = { Odds = 100, id = { 142437 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142436</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142436,
+	BuffName = "校长的权威-删除神出鬼没",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { id = { 142420, 142421, 142422, 142423, 142424, 142425 }, type = "DelBuff" },
+}
 </code></pre>
 </details>
 
@@ -396,17 +512,34 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142440</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142440,
+	BuffName = "替罪羔羊-伤害转移",
+	BuffRate = { Odds = 100 },
+	BuffStateID = 142440,
+	BuffEffect = { transfer_ratio = 1, type = "Scapegoat" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "替罪羔羊：转移伤害",
+	Dsc = "替罪羔羊：转移伤害",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142443</summary>
-<pre><code>undefined
+<pre><code>{ id = 142443, BuffName = "替罪羔羊-伤害转移自身", BuffRate = { Odds = 100 }, BuffStateID = 142443 }
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142444</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142444,
+	BuffName = "替罪羔羊-减伤",
+	BuffRate = { Odds = 100 },
+	Condition = { nobuffid = { 142442 }, type = "HasBuff" },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { BaWangRate = 0.5, sync_nine = 1, type = "AttrChange" },
+}
 </code></pre>
 </details>
 
@@ -461,22 +594,45 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142530</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142530,
+	BuffName = "体罚准备（生命流失）",
+	BuffRate = { Odds = 100 },
+	BuffStateID = 142530,
+	BuffEffect = { Hp = { type = 10220 }, type = "HSPChange" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142531</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142531,
+	BuffName = "体罚准备（受到火属性伤害提高）",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { BeFireDamPer = -0.2, type = "AttrChange" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142532</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142532,
+	BuffName = "体罚准备（特别体罚）",
+	BuffRate = { Odds = 100 },
+	Condition = { need_dead = 1, type = "OnNearDeath" },
+	BuffStateID = 142532,
+	BuffEffect = { Odds = 100, id = { 142455 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142533</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142533,
+	BuffName = "体罚准备（绝望斩杀）",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { Odds = 100, id = { 142534 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 
@@ -589,7 +745,7 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142540</summary>
-<pre><code>undefined
+<pre><code>{ id = 142540, BuffName = "倒计时", BuffRate = { Odds = 100 }, BuffStateID = 142540 }
 </code></pre>
 </details>
 
@@ -624,12 +780,23 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142470</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142470,
+	BuffName = "不容置疑的权威",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { DamReduc = { a = 0.02, b = 0.1, type = 1 }, MDamReduc = { a = 0.02, b = 0.1, type = 1 }, type = "AttrChange" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142471</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142471,
+	BuffName = "不容置疑的权威（受到伤害）",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, buff_skill_can_trigger = 1, must_have_damage = 1, type = "BeAttack" },
+	BuffEffect = { IsActive = 0, Odds = 100, effect_cd = 1, id = 4921001, type = "UseSkill" },
+}
 </code></pre>
 </details>
 
@@ -664,12 +831,23 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142484</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142484,
+	BuffName = "不存在的通道Lv.5",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "OnNearDeath" },
+	BuffEffect = { effect_cd = 30, id = { 142485, 142486, 142487 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #142488</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142488,
+	BuffName = "不存在的通道地面时间",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { duration = { a = 0.5, b = 0, type = 1 }, skillID = { 4938 }, type = "AffactSkill" },
+}
 </code></pre>
 </details>
 
@@ -704,7 +882,7 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142460</summary>
-<pre><code>undefined
+<pre><code>{ id = 142460, BuffName = "游戏组织者（伪）", BuffRate = { Odds = 100 }, ShareTeamBuff = 142461 }
 </code></pre>
 </details>
 
@@ -739,7 +917,13 @@ undefined
 </details>
 <details>
 <summary>BUFFER #142490</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 142490,
+	BuffName = "体罚达人",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, need_damage = 1, type = "Attack" },
+	BuffEffect = { Odds = 100, id = { 142491, 142492, 142493, 142494, 142495, 142496, 142497, 142498, 142499, 142500 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 

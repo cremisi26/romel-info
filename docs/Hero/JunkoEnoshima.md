@@ -46,37 +46,94 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143060</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143060,
+	BuffName = "超高中级的绝望-追踪",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { despair_buff_id = 143043, threshold = 0.1, type = "DespairTracker" },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143041</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143041,
+	BuffName = "绝望之声-阵亡触发",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { skillids = { 4963 }, type = "DeadUseSkill" },
+	BuffDesc = "超高中级的绝望：阵亡时释放绝望之声",
+	DeadCanAdd = 1,
+	Dsc = "超高中级的绝望：阵亡时释放绝望之声",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143042</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143042,
+	BuffName = "绝望之声-阵亡触发2",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "Die" },
+	BuffEffect = { IsActive = 0, Odds = 100, id = 4963001, type = "UseSkill" },
+	BuffDesc = "超高中级的绝望：阵亡时释放绝望之声",
+	DeadCanAdd = 1,
+	Dsc = "超高中级的绝望：阵亡时释放绝望之声",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143072</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143072,
+	BuffName = "绝望残骸-死亡监听",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "Die" },
+	BuffEffect = { id = { 143070, 143074, 143075, 143108, 143077, 143079, 143220 }, type = "AddBuff" },
+	Dsc = "死亡时添加绝望残骸与死亡放技能",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143076</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143076,
+	BuffName = "绝望残骸-复活清除buff",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "Reborn" },
+	BuffEffect = {
+		layer = { { id = 143074, layer = 1 }, { id = 143075, layer = 1 }, { id = 143108, layer = 1 }, {
+			id = 143077,
+			layer = 1,
+		} },
+		type = "DelBuff",
+	},
+	DeadCanAdd = 1,
+	Dsc = "复活清理buff",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143078</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143078,
+	BuffName = "绝望残骸-死亡放技能2",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "Die" },
+	BuffEffect = { IsActive = 0, Odds = 100, id = 4958001, type = "UseSkill" },
+	DeadCanAdd = 1,
+	Dsc = "7级特性：死亡后可在残骸状态下持续释放终极惩罚：自我毁灭",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143044</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143044,
+	BuffName = "绝望之声-4级",
+	BuffRate = { Odds = 100 },
+	Condition = { buff_skill_can_trigger = 1, need_skill = { 4963, 4978 }, type = "UseSkillKill" },
+	BuffEffect = { skill_id = 4978001, type = "SkillKillRecast" },
+}
 </code></pre>
 </details>
 
@@ -147,12 +204,29 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143000</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143000,
+	BuffName = "绝望的初现-减速",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 1, isgain = 0 },
+	BuffEffect = { MoveSpdPer = -0.5, type = "AttrChange" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "绝望波纹：移动速度降低",
+	Dsc = "绝望波纹：移动速度降低",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143080</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143080,
+	BuffName = "绝望的回响-替换初现",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { newid = 4964, oldid = 4955, type = "ReplaceSkill" },
+	Dsc = "使用【绝望的初现】后，【绝望的回响】变为【更绝望的初现】",
+	DelBuffID = { 143081, 143082, 143083 },
+}
 </code></pre>
 </details>
 
@@ -207,17 +281,48 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143010</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143010,
+	BuffName = "绝望的蔓延-传递",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 0 },
+	BuffStateID = 143011,
+	BuffEffect = { spread_buff_id = 143011, spread_range = 3, type = "SpreadBuff" },
+	Dsc = "绝望蔓延：恐惧会向周围敌人传递",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143011</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143011,
+	BuffName = "绝望的蔓延-恐惧",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 1, isgain = 0 },
+	BuffStateID = 116451,
+	BuffEffect = {
+		AttrEffect = { 3, 4 },
+		FearRun = 1,
+		NoSkill = 1,
+		StateEffect = 8,
+		end_extra_buff = { 143040, 143183 },
+		force_status = 1,
+		type = "StatusChange",
+	},
+	Dsc = "绝望蔓延：恐惧持续5秒，结束时清除恐惧并添加1层绝望",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143081</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143081,
+	BuffName = "绝望的回响-替换蔓延",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { newid = 4965, oldid = 4955, type = "ReplaceSkill" },
+	Dsc = "使用【绝望的蔓延】后，【绝望的回响】变为【更绝望的蔓延】",
+	DelBuffID = { 143080, 143082, 143083 },
+}
 </code></pre>
 </details>
 
@@ -270,22 +375,52 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143020</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143020,
+	BuffName = "绝望的低语-击杀归属",
+	BuffRate = { Odds = { type = 6090 } },
+	BuffEffect = { type = "KillCreditTransfer" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "绝望低语：击杀归属转移,会对友方造成伤害",
+	Dsc = "绝望低语：击杀归属转移",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143021</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143021,
+	BuffName = "绝望的低语-攻击友方",
+	BuffRate = { Odds = { type = 6090 } },
+	BuffStateID = 143021,
+	BuffEffect = { damRatio = { a = 0, b = 0.1, type = 1 }, type = "HurtFriend" },
+	Dsc = "绝望低语：会对友方造成伤害",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143022</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143022,
+	BuffName = "绝望的低语-击杀叠绝望",
+	BuffRate = { Odds = { type = 6090 } },
+	Condition = { Value = { 0 }, buff_skill_can_trigger = 1, type = "KillRace" },
+	BuffEffect = { layer = { { id = 143040, layer = 1 }, { id = 143183, layer = 1 } }, type = "AddBuff" },
+	Dsc = "绝望低语：每击杀1个单位，获得1层绝望",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143082</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143082,
+	BuffName = "绝望的回响-替换低语",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { newid = 4966, oldid = 4955, type = "ReplaceSkill" },
+	Dsc = "使用【绝望的低语】后，【绝望的回响】变为【更绝望的低语】",
+	DelBuffID = { 143080, 143081, 143083 },
+}
 </code></pre>
 </details>
 
@@ -339,17 +474,41 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143083</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143083,
+	BuffName = "绝望的回响-替换结局",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { newid = 4967, oldid = 4955, type = "ReplaceSkill" },
+	Dsc = "使用【绝望的结局】后，【绝望的回响】变为【更绝望的结局】",
+	DelBuffID = { 143080, 143081, 143082 },
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143030</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143030,
+	BuffName = "绝望的结局-添加绝望",
+	BuffRate = { Odds = { a = 855, type = 10154 } },
+	BuffStateID = 143030,
+	BuffEffect = { layer = { { id = 143040, layer = { a = 4954, type = 10152 } }, { id = 143183, layer = 1 } }, type = "AddBuff" },
+	Dsc = "绝望的结局：按技能等级添加【绝望】",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143051</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143051,
+	BuffName = "绝望的结局-增伤保护",
+	BuffRate = { Odds = { a = 855, type = 10154 } },
+	BuffStateID = 143051,
+	BuffEffect = { type = "AttrChange" },
+	BuffIcon = "skillbuff_commonbuff",
+	IconType = 1,
+	BuffDesc = "绝望的结局：为【绝望】额外提供增伤",
+	Dsc = "绝望的结局：按技能等级为【绝望】额外提供增伤，并免疫【绝望】满层斩杀；对自己无效",
+}
 </code></pre>
 </details>
 
@@ -447,22 +606,55 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143090</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143090,
+	BuffName = "心灵帷幕-隐匿免疫",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { immune_buff_ids = { 143040 }, type = "StealthImmune" },
+	Dsc = "心灵帷幕：敌人看不见盾子时，免疫盾子施加的【绝望】",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143091</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143091,
+	BuffName = "心灵帷幕-强隐身",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffStateID = 143091,
+	BuffEffect = {
+		AttrEffect = { 17 },
+		Hiding = 1,
+		MoveSpdPer = { a = 0.05, b = 0.25, type = 1 },
+		StateAtk = { a = 0, b = 0, c = 223271, type = 5020 },
+		StateDef = { a = 0, b = 0, c = 223271, type = 5020 },
+		type = "SpecialHide",
+	},
+	Dsc = "心灵帷幕：进入不可探查、不可解除的强隐身状态，移动速度+50%",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143092</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143092,
+	BuffName = "心灵帷幕-替换取消",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { BuffListSkillReplace = 1, newid = 4968, oldid = 4956, type = "ReplaceSkill" },
+	Dsc = "心灵帷幕开启期间，将技能替换为取消版本",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143095</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143095,
+	BuffName = "心灵帷幕-技能图标变化",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { configType = 2, ids = { 4956 }, type = "DynamicSkillConfig", value = "skill_13001" },
+}
 </code></pre>
 </details>
 
@@ -516,22 +708,53 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143100</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143100,
+	BuffName = "绝望力场-光环",
+	BuffRate = { Odds = 100 },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffStateID = 143100,
+	BuffEffect = { IsActive = 0, Odds = 100, id = 4969001, type = "UseSkill" },
+	Dsc = "绝望力场：每秒对自身周围敌人释放力场脉冲",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143105</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143105,
+	BuffName = "绝望力场-死亡留场触发",
+	BuffRate = { Odds = { a = 4950, b = -100, c = 700, type = 8 } },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { skillids = { 4976 }, type = "DeadUseSkill" },
+	DeadCanAdd = 1,
+	Dsc = "开启绝望力场期间阵亡时释放死亡留场技能；随绝望力场持续10秒结束",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143109</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143109,
+	BuffName = "绝望力场-死亡留场触发2",
+	BuffRate = { Odds = { a = 4950, b = -100, c = 700, type = 8 } },
+	Condition = { type = "Die" },
+	BuffType = { isdisperse = 0, isgain = 1 },
+	BuffEffect = { IsActive = 0, Odds = 100, RealUse = 2, id = 4976001, type = "UseSkill" },
+	DeadCanAdd = 1,
+	Dsc = "开启绝望力场期间阵亡时释放死亡留场技能；随绝望力场持续10秒结束",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143110</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143110,
+	BuffName = "绝望力场-专武",
+	BuffRate = { Odds = 100 },
+	Condition = { buffid = { 90007684 }, type = "HasBuff" },
+	BuffEffect = { Odds = 100, id = { 143040 }, type = "AddBuff" },
+}
 </code></pre>
 </details>
 
@@ -607,7 +830,7 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143152</summary>
-<pre><code>undefined
+<pre><code>{ id = 143152, BuffName = "终极惩罚-UI无", BuffRate = { Odds = 100 } }
 </code></pre>
 </details>
 
@@ -642,12 +865,27 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143181</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143181,
+	BuffName = "享受绝望-击杀加层",
+	BuffRate = { Odds = 100 },
+	Condition = { Value = { 0 }, buff_skill_can_trigger = 1, type = "KillRace" },
+	BuffEffect = { Odds = 100, id = { 143180 }, type = "AddBuff" },
+	Dsc = "享受绝望：击杀单位时获得1层强化",
+}
 </code></pre>
 </details>
 <details>
 <summary>BUFFER #143182</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143182,
+	BuffName = "享受绝望-阵亡加层",
+	BuffRate = { Odds = 100 },
+	Condition = { type = "Die" },
+	BuffEffect = { Odds = 100, id = { 143180 }, type = "AddBuff" },
+	DeadCanAdd = 1,
+	Dsc = "享受绝望：阵亡时获得1层强化",
+}
 </code></pre>
 </details>
 
@@ -682,7 +920,14 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143190</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143190,
+	BuffName = "超高中级的辣妹-攻击触发",
+	BuffRate = { Odds = 100 },
+	Condition = { all_skill = 1, buff_skill_can_trigger = 1, need_damage = 1, type = "Attack" },
+	BuffEffect = { Odds = 100, id = { 143191 }, type = "AddBuff" },
+	Dsc = "超高中级的辣妹：造成伤害时给目标添加辣妹破防",
+}
 </code></pre>
 </details>
 
@@ -717,7 +962,17 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143201</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143201,
+	BuffName = "受虐体质-属性",
+	BuffRate = { Odds = 100 },
+	BuffEffect = {
+		DamRebound = { a = 4961, type = 10163 },
+		MDamRebound = { a = 4961, type = 10163 },
+		MaxHp = { a = 4961, type = 10162 },
+		type = "AttrChange",
+	},
+}
 </code></pre>
 </details>
 
@@ -752,7 +1007,12 @@ undefined
 </details>
 <details>
 <summary>BUFFER #143200</summary>
-<pre><code>undefined
+<pre><code>{
+	id = 143200,
+	BuffName = "具象绝望-替换普攻",
+	BuffRate = { Odds = 100 },
+	BuffEffect = { newid = 4973, oldid = 4949, type = "ReplaceSkill" },
+}
 </code></pre>
 </details>
 

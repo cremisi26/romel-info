@@ -6,3 +6,5 @@ Might still migrate to something else again. So bear with me~
 ## HERO LIST
 
 - [[Hero/Himmelmez]] - Saint No.4
+- [[Hero/Monokuma]]
+- [[Hero/JunkoEnoshima]]
